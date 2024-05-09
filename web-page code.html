@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>REGISTRATION FORM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FF69B4, #3399FF);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            max-width: 100%;
+        }
+
+        .form-v2-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-left img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .text-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .form-detail {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .input-text {
+            width: calc(100% - 10px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .registerbtn {
+            background-color: #3399FF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-checkbox {
+            margin-bottom: 20px;
+        }
+
+        .form-checkbox label {
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 0;
+        }
+
+        .form-checkbox input[type="checkbox"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <div class="form-v2-content">
+        <div class="form-left">
+            <img src="C:\Users\PRIYANSHI SHARMA\Desktop\form pic.jpg" alt="form">
+            <div class="text-overlay">
+                <div>Bring Your Music Along</div>
+                <div>Try Unlimited</div>
+                <div>$9.99/ Month</div>
+            </div>
+        </div>
+        <form class="form-detail" action="#" method="post" id="myform">
+            <h2>Registration Form</h2>
+            <div class="form-row">
+                <label for="full-name">Full Name:</label>
+                <input type="text" name="full_name" id="full_name" class="input-text" placeholder="ex: Lindsey Wilson">
+            </div>
+            <div class="form-row">
+                <label for="your_email">Your Email:</label>
+                <input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+            </div>
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" class="input-text" required>
+            </div>
+            <div class="form-row">
+                <label for="comfirm-password">Confirm Password:</label>
+                <input type="password" name="confirm_password" id="confirm_password" class="input-text" required>
+            </div>
+            <div class="form-row form-checkbox">
+                <label><input type="checkbox" name="agree" id="agree">By signing up, you agree to the <a href="#">Play Terms of Service</a></label>
+            </div>
+            <div class="form-row-last">
+                <input type="submit" name="register" class="registerbtn" value="Register">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
